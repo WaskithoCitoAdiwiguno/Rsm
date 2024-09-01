@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Query</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Patient Query</h2>
+        </div>
+        <div class="form-container">
+            <form>
+                <label for="patient-no">ID Pasien</label>
+                <input type="text" id="patient-no" name="patient-no">
+
+                <label for="patient-name">Nama Pasien</label>
+                <input type="text" id="patient-name" name="patient-name">
+
+                <label for="owner">Tanggal</label>
+                <input type="text" id="owner" name="owner">
+
+                <label for="phone">Dokter</label>
+                <input type="text" id="phone" name="phone">
+
+                <label for="gender">GenderPasien</label>
+                <select id="gender" name="gender">
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+
+                <button type="submit">Search</button>
+            </form>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>MRN</th>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Owner</th>
+                        <th>Phone 1</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td><input type="text" placeholder="Filter"></td>
+                        <td><input type="text" placeholder="Filter"></td>
+                        <td><input type="text" placeholder="Filter"></td>
+                        <td><input type="text" placeholder="Filter"></td>
+                        <td><input type="text" placeholder="Filter"></td>
+                    </tr>
+                    <!-- Additional rows go here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
